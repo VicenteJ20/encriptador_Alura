@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2rem 1rem;
+    padding: 3rem 2rem 1rem 2rem;
+    min-height: 93vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#textUserSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.headerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    padding: 0.5rem 0;
+}
+
+#changeTheme{
+    cursor: pointer;
+    border: 1px solid #052041;
+    padding: 0.6rem;
+    background-color: #145db8;
+    color: #fafafa;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#changeTheme:hover{
+    background-color: #00a1a1;
+    color: #052041;
+    transition: 0.3s;
+}
+
+.textAreaDiv{
+    height: 90%;
+    padding: 3rem 0;
+}
+
+#textArea{
+    all: unset;
+    height: 100%;
+    width: 90%;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.alertText{
+    color: #495057;
+}
+
+.buttonsDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.button{
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #D8DFE8;
+    border-radius: 1.6rem;
+    color: #0A3871;
+}
+
+#button1{
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+
+#button2:hover,
+#button1:hover{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    transition: 0.6s;
+}
+
+#resultUserSection{ 
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 32px 0px rgba(68, 68, 68, 0.08);
+}
+
+#showMessage{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.showEncryptedMessage{
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.showMessage{
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    line-height: 1.5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+
+.buttonsDivCard{
+    position: absolute;
+    bottom: 1rem;
+    left: 0rem;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.buttonCard{
+    width: 100%;
+    padding: 0.4rem 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.divTextCard{
+    position: relative;
+    height: fit-content;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+}
+
+.textoCard{
+    font-stretch: wider;
+}
+
+.copyButton{
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    background: none;
+    position: absolute;
+    right: 1.5rem;
+    top: 0rem;
+    height: 100%;
+}
+
+.copyButton:hover{
+    transition: 0.5s;
+    color: #0751ac;
+}
+
+.delButton{
+    border: 2px solid #0A3871;
+    color: #F3F5FC;
+    background-color: #0A3871;
+}
+
+.delButton:hover{
+    background-color: #D8DFE8;
+    color: #052041;
+    transition: 0.5s;
+}
+
+.figureImg{
+    width: 100%;
+}
+
+.figureImg img{
+    max-width: 100%;
+}
+#footer{
+    text-align: center;
+    padding: 1rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+#footer a{
+    color: #1276f0;
+    font-weight: 600;
+}
+
+#footer a:hover{
+    color: #00a1a1;
+    transition: 0.6s;
+}
+
+.mensajePopUp{
+    background-color: rgba(17, 17, 17, 0.801);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensajePopUp::content{
+    transition-duration: 1s;
+}
+
+.divContentPopUp{
+    background-color: #fafafa;
+    width: 40%;
+    min-height: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconPopUp{
+    font-size: 4rem;
+    color: rgb(219, 100, 3);
+}
+
+.textPopUp{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.closeButtonPopUp{
+    cursor: pointer;
+    background-color: #0A3871;
+    color: #fafafa;
+    border: 1px solid #052041;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.closeButtonPopUp:hover{
+    background-color: #0751ac;
+    transition: 0.6s;
+}
+
+#desencryptedDataDiv{
+    height: fit-content;
+}
+
+
+@media only screen and (max-width: 1500px){
+    #main{
+        grid-template-columns: 60% 40%;
+    }
+
+    .showEncryptedMessage{
+        padding: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 1065px){
+    #main{
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+    }
+
+    .buttonsDiv{
+        justify-content: center;
+    }
+
+    .textAreaDiv{
+        min-height: 35vh;
+    }
+
+    .figureImg{
+        display: none;
+    }
+
+    .showMessage{
+        padding-bottom: 8rem;
+        overflow-y: scroll;
+    }
+
+    .textMessageDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .buttonsDiv{
+        width: 99%;
+    }
+    
+}
+
+@media only screen and (max-width: 825px){
+    #showMessage{
+        padding: 2rem 1.3rem;
+    }
+
+    .divContentPopUp{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    html{
+        font-size: 0.8rem;
+    }
+}

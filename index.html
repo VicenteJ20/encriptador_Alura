@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="icon" href="/recursos/Vector.svg">
+    <title>Desafío 1 Encriptador ALURA</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/main.css">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="root">
+    <main id="main">
+        <section id="textUserSection">
+            <header class="headerSection">
+                <img class="imgbrand" id="imgHeader">
+                <button id="changeTheme" value="white">Cambiar tema</button>
+            </header>
+            <form class="textAreaDiv">
+                <textarea name="textArea" id="textArea" placeholder="Ingrese el texto aquí..."></textarea>
+            </form>
+            <div class="alert">
+                <p class="alertText"><i class="fa-solid fa-circle-exclamation"></i>
+                 Solo letras minúsculas y sin acentos</p>
+                 <div class="buttonsDiv">
+                    <button class="button" id="button1" value="encrypt">Encriptar</button>
+                    <button class="button" id="button2" value="decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section id="resultUserSection">
+            <div id="showEncryptedData" class="showMessage" style="display: none;">
+                <div class="buttonsDivCard">
+                    <button class="buttonCard delButton" id="delButton1">Refrescar</button>
+                </div>
+            </div>
+            <div id="showDesencryptedData" class="showMessage" style="display: none;">
+                <div class="buttonsDivCard">
+                    <button class="buttonCard delButton" id="delButton2">Refrescar</button>
+                </div>
+            </div>
+            <div id="showMessage" style="display: flex;">
+                <figure class="figureImg">
+                    <img id="muneco" alt="looking for your crypted message">
+                </figure>
+                <div class="textMessageDiv">
+                    <h2 class="titleMessage">Ningún mensaje fue encontrado</h2>
+                    <p class="descriptionMessage">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">Diseñado por <a href='https://www.aluracursos.com/' target="_blank">Alura</a>. Codificado por <a href="https://www.instagram.com/jvicente_20" target="_blank">Vicente Jorquera</a></footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
