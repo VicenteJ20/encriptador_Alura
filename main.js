@@ -223,7 +223,7 @@ decryptButton.addEventListener('click', function(){
     if (getValue(textoIngresado) === ''){
         launchPopUp('Error, debes ingresar una palabra para desencriptar');
     } else if (/[^(a-z)|(\s)]/g.test(getValue(textoIngresado))) {
-        launchPopUp('Error, no se pueden desencriptar, mayúsculas, tildes ni carácteres especiales.');
+        launchPopUp('Error, no se pueden desencriptar, mayúsculas, tildes, números ni carácteres especiales.');
     } else {
         encryptedDataDiv.style.display = 'none';
         if (data.length === 0){
