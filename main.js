@@ -222,7 +222,7 @@ encryptButton.addEventListener('click', function(){
 decryptButton.addEventListener('click', function(){
     if (getValue(textoIngresado) === ''){
         launchPopUp('Error, debes ingresar una palabra para desencriptar');
-    } else if ((/[A-Z]/g.test(getValue(textoIngresado)) === true) || (/[´´áéíóúÁÉÍÓÚ*!¡/(-)#$%&=?¿¨¨><+@;:.,|_°]/g.test(getValue(textoIngresado))) === true) {
+    } else if ( /[^(a-z)|(\s)]/g.test(getValue(textoIngresado))) {
         launchPopUp('Error, no se pueden desencriptar, mayúsculas, tildes ni carácteres especiales.');
     } else {
         encryptedDataDiv.style.display = 'none';
