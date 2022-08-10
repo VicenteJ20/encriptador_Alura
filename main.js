@@ -204,7 +204,7 @@ encryptButton.addEventListener('click', function(){
     if (getValue(textoIngresado) === ''){
         launchPopUp('Error, debes ingresar un texto para encriptar');
     } else if (/[^(a-z)|(\s)]/g.test(getValue(textoIngresado))) {
-        launchPopUp('Error, no se pueden desencriptar, mayúsculas, tildes ni carácteres especiales.');
+        launchPopUp('Error, no se pueden desencriptar, mayúsculas, números tildes ni carácteres especiales.');
     } else {
         desencryptedDataDiv.style.display = 'none';
         //alert('Texto diferente de cadena vacía');
